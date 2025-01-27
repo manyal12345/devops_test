@@ -1,7 +1,9 @@
 services:
   php:
     build:
-      context: .
-    container_name: phpsrv
+      context: . 
+    container_name: newphpsrv
     ports:
-      - "8008:80"
+      - "8010:80"
+    volumes:
+      - .:/var/www/html/
