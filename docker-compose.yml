@@ -1,0 +1,7 @@
+services:
+  php:
+    build:
+      context: .
+    container_name: phpsrv
+    ports:
+      - "8008:80"
